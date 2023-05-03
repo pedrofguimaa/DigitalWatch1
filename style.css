@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Quicksand&display=swap');
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color:#232c35;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: background 0.2s linear;
+}
+
+body.light {
+    background:#f6db77;
+}
+
+.checkbox{
+    opacity:0;
+    position:absolute;
+}
+
+.label{
+    background-color:#11111182;
+    border-radius:50px;
+    cursor:pointer;
+    transform: scale(1.5);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px;
+    position:relative;
+    height:26px;
+    width:50px
+}
+
+.label .ball{
+    background-color:#0000005c;
+    border-radius:50%;
+    top:2px;
+    left:2px;
+    position:absolute;
+    height:22px;
+    width:22px;
+   
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform:translateX(24px);
+}
+
+.fa-moon{
+    color:rgb(11, 46, 72)
+}
+.fa-sun{
+    color:rgb(244, 168, 5);
+}
+.relogio{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    height:200px;
+    width: 550px;
+    background-color: rgb(144, 147, 147);
+    border-radius:3px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.5);   
+
+    margin-left:580px;
+    margin-top:140px
+   
+}
+.relogio div{
+    height:170px;
+    width:150px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    background:rgba(5,5,5,0.9); 
+    box-shadow: 5px 5px 15px rgba(0,0,0, 0.7);
+    border-radius:7px;
+    letter-spacing: 3px;
+    
+    
+}
+
+.botao{
+    padding:50px;
+    position:relative;
+}
+.relogio span{
+    font-weight: bolder;
+    font-size:60px;
+}
+.relogio span.tempo{
+    font-size:10px;
+}
+h1{
+    margin-left:750px;
+    margin-top:10px;
+    color:rgb(144, 147, 147);
+}
+
+
+
